@@ -1471,6 +1471,7 @@ dependencies = [
  "uu_blockdev",
  "uu_cal",
  "uu_chcpu",
+ "uu_copyfilerange",
  "uu_ctrlaltdel",
  "uu_dmesg",
  "uu_fsfreeze",
@@ -1525,6 +1526,14 @@ dependencies = [
  "libc",
  "rangemap",
  "thiserror",
+ "uucore 0.2.2",
+]
+
+[[package]]
+name = "uu_copyfilerange"
+version = "0.0.1"
+dependencies = [
+ "clap",
  "uucore 0.2.2",
 ]
 

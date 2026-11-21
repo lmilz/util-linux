@@ -15,6 +15,10 @@ fn init() {
         std::env::set_var("UUTESTS_BINARY_PATH", TESTS_BINARY);
     }
 }
+#[cfg(feature = "copyfilerange")]
+#[path = "by-util/test_copyfilerange.rs"]
+mod test_copyfilerange;
+
 #[cfg(feature = "lscpu")]
 #[path = "by-util/test_lscpu.rs"]
 mod test_lscpu;

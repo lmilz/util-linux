@@ -1,0 +1,15 @@
+[package]
+name = "uu_copyfilerange"
+version = "0.0.1"
+edition = "2021"
+
+[lib]
+path = "src/copyfilerange.rs"
+
+[[bin]]
+name = "copyfilerange"
+path = "src/main.rs"
+
+[dependencies]
+uucore = { workspace = true }
+clap = { workspace = true }
